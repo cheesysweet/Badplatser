@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="se.miun.anby2001.dt031g.bathingsites.ui.MainActivity">
+
+    <item
+        android:id="@+id/action_bathing_sites"
+        android:orderInCategory="100"
+        android:title="@string/view_bathing_sites"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_fetch_bathing_sites"
+        android:orderInCategory="100"
+        android:title="@string/fetch_bathing_sites"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+</menu>

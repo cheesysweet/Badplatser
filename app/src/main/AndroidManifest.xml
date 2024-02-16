@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.miun.anby2001.dt031g.bathingsites" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_bathing_site_launcher"
+        android:roundIcon="@mipmap/ic_bathing_site_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BathingSites" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".ui.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".ui.BathingSiteLogActivity"
+            android:theme="@style/Theme.BathingSites.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor"/>
+        <activity
+            android:name=".ui.BathingSiteLogActivity"
+            android:exported="false"
+            android:label="@string/stored_bathing_sites"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity
+            android:name=".ui.AddBathingSiteActivity"
+            android:exported="false"
+            android:label="@string/app_second_name"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.BathingSites.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

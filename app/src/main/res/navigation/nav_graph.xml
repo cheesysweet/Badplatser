@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bathingSitesFragment">
+    <fragment
+        android:id="@+id/bathingSitesFragment"
+        android:name="se.miun.anby2001.dt031g.bathingsites.ui.BathingSitesFragment"
+        android:label="Bathing sites"
+        tools:layout="@layout/fragment_bathing_sites">
+        <action
+            android:id="@+id/action_bathingSitesFragment_to_addBathingSitesFragment"
+            app:destination="@id/addBathingSitesFragment" />
+        <action
+            android:id="@+id/action_bathingSitesFragment_to_bathingSiteLogFragment"
+            app:destination="@id/bathingSiteLogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBathingSitesFragment"
+        android:name="se.miun.anby2001.dt031g.bathingsites.ui.AddBathingSitesFragment"
+        android:label="Add bathing site"
+        tools:layout="@layout/fragment_add_bathing_sites">
+        <action
+            android:id="@+id/action_addBathingSitesFragment_to_bathingSitesFragment"
+            app:destination="@id/bathingSitesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bathingSiteLogFragment"
+        android:name="se.miun.anby2001.dt031g.bathingsites.ui.BathingSiteLogFragment"
+        android:label="Stored bathing sites">
+        <action
+            android:id="@+id/action_bathingSiteLogFragment_to_bathingSitesFragment"
+            app:destination="@id/bathingSitesFragment" />
+    </fragment>
+</navigation>

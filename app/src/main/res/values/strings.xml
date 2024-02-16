@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Bathing Sites</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="bathingsign">BathingSign</string>
+    <string name="s_bathing_sites">%d bathing sites</string>
+    <string name="name">Name:</string>
+    <string name="description">Description:</string>
+    <string name="address">Address:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="grade">Grade:</string>
+    <string name="waterTemp">Water temp:</string>
+    <string name="date">Date of temp:</string>
+    <string name="addBathingSite">add bathing site</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_save">Save</string>
+    <string name="bathing_site_toast">Name: %s \nDescription: %s \nAddress: %s \nLongitude: %f
+        \nLatitude: %f \nGrade: %s \nWater temp: %s \nDate for temp: %s</string>
+    <string name="no_bathing_sites">There are no bathing sites stored</string>
+    <string name="random_bathing_site">Random bathing site</string>
+    <string name="bathing_site_stored">Bathing site stored</string>
+    <string name="comma">,</string>
+    <string name="title_activity_test">test</string>
+    <string name="view_bathing_sites">View bathing sites</string>
+    <string name="fetch_bathing_sites">Fetch bathing sites</string>
+    <string name="fetchingbathingsites">fetchingBathingSites</string>
+    <string name="app_second_name">Add Bathing Sites</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="action_nearby">NEARBY</string>
+    <string name="stored_bathing_sites">Stored Bathing Sites</string>
+</resources>

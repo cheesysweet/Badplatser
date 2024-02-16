@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="se.miun.anby2001.dt031g.bathingsites.ui.MapsActivity">
+    <item
+        android:id="@+id/action_nearby"
+        android:orderInCategory="100"
+        android:title="@string/action_nearby"
+        app:showAsAction="ifRoom"/>
+
+</menu>
